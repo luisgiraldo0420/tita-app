@@ -3,6 +3,25 @@
 <p align="left">
    <img src="https://img.shields.io/badge/STATUS-FINALIZADO-green">
    </p>
+   
+   ##Índice
+
+*[Título e imagen de portada](#Título-e-imagen-de-portada)
+
+*[Insignias](#insignias)
+
+*[Índice](#índice)
+
+*[Descripción del proyecto](#descripción-del-proyecto)
+
+*[Estado del proyecto](#Estado-del-proyecto)
+
+*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+
+*[Acceso al proyecto](#acceso-proyecto)
+
+*[Tecnologías utilizadas](#tecnologías-utilizadas)
+
 
 # Getting Started with Create React App
 
