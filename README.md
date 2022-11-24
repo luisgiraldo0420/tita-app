@@ -15,21 +15,21 @@
 
 ## Descripción
 
-Proyecto desarrollado para prueba tecnica Tita Media
+Proyecto desarrollado para prueba tecnica Tita Media\
 
 ## Funcionalidad
 
-Inicio de sesión por medio de servicio de Google.
-Listado de post en el home
-ventana modal para ver los comentarios del post.
-ventana modal para ver información del autor del post.
-filtros por tag
-La información del usuario autenticado en el header.
+Inicio de sesión por medio de servicio de Google.\
+Listado de post en el home.\
+ventana modal para ver los comentarios del post.\
+ventana modal para ver información del autor del post.\
+filtros por tag.\
+La información del usuario autenticado en el header.\
 
 ## Tecnologías utilizadas
-React js
-sass
-despliegue en netlify
+React js\
+sass\
+despliegue en netlify:\
 https://clinquant-selkie-26971b.netlify.app/
 
 ### `npm start`
