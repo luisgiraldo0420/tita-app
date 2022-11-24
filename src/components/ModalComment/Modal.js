@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import Modal from 'react-modal';
 import {usePost} from '../../hooks';
 import './Modal.scss';
