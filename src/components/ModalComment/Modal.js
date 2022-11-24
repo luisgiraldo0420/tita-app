@@ -10,6 +10,7 @@ export function ModalInfo(props) {
     useEffect(() => {
         getComment(post_id)
     }, [post_id]);
+    console.log(comment.data.length);
   return (
     <Modal
     isOpen={actionOpen}
@@ -26,23 +27,26 @@ export function ModalInfo(props) {
           (
             <>
             { 
-              map(comment.data, (comm, index) => (
-                <li key={index}>
-              <div className="comment-main-level">
-                <div className="comment-box">
-                  <div className="comment-head">
-                    <h6 className="comment-name by-author"><a href="#"> 
-                    {comm.owner.firstName}  {comm.owner.lastName}</a></h6>
-                    <i className="fa fa-reply"></i>
-                    <i className="fa fa-heart"></i>
-                  </div>
-                  <div className="comment-content">
-                  {comm.message}
-                  </div>
-                </div>
-              </div>
-            </li>
-            ))
+              comment.data.length === 0 ? (<h2>Ups... al parecer este post no tiene comentarios</h2>):(map(comment.data, (comm, index) => (
+                comm.message === "" ? (<h2>Ups... al parecer el post no tiene comentarios</h2>):(
+                  <li key={index}>
+                    <h1>{comm.message}</h1>
+                    <div className="comment-main-level">
+                      <div className="comment-box">
+                        <div className="comment-head">
+                          <h6 className="comment-name by-author"><a href="#"> 
+                          {comm.owner.firstName}  {comm.owner.lastName}</a></h6>
+                          <i className="fa fa-reply"></i>
+                          <i className="fa fa-heart"></i>
+                        </div>
+                        <div className="comment-content">
+                        {comm.message}
+                        </div>
+                      </div>
+                    </div>
+                  </li>)
+            )))
+              
             }
               </>
           )

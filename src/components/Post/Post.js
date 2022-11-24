@@ -14,9 +14,7 @@ export function Post() {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [modaluserOpen, setModalUserOpen] = useState(false);
     const [idpost, setIdpost] = useState(false);
-    const [user, setuser] = useState(false);
-    const [tag, setTag] = useState('');
-   
+    const [user, setuser] = useState(false);   
 
    
 const openCloseModal = (id = undefined) => {
@@ -45,20 +43,27 @@ const openCloseModalUser = (user= undefined) =>{
         window.location.reload(false);
       }
     const filterByTag = (filter_tag) => {
-        getPostByTag(filter_tag)
+        console.log(filter_tag, 'lo que llega');
+        if(filter_tag && filter_tag !== ''){
+            getPostByTag(filter_tag)
+        }else{
+            console.log('éntra');
+            getPost();
+        }
+        
     }
 
     return (
 <div className='heading-post'>
     <h2><span>Post</span></h2>
-    <FIlter filterByTag= {filterByTag} refreshPage={refreshPage} />
+    <FIlter filterByTag= {filterByTag} refreshPage={refreshPage} tags ={tags} />
     <div className='container'>
         {
             loading ? (
                 <h2 className='loader'>Cargando...</h2>
             ):
             (
-                postByTag ? (
+                postByTag && postByTag !== '' ? (
                     map(postByTag.data, (p, index) => (
                    <CardPost p={p} index={index} openCloseModal={openCloseModal} openCloseModalUser={openCloseModalUser} />
                    ))
