@@ -10,7 +10,6 @@ export function ModalInfo(props) {
     useEffect(() => {
         getComment(post_id)
     }, [post_id]);
-    console.log(comment.data.length);
   return (
     <Modal
     isOpen={actionOpen}
@@ -27,8 +26,7 @@ export function ModalInfo(props) {
           (
             <>
             { 
-              comment.data.length === 0 ? (<h2>Ups... al parecer este post no tiene comentarios</h2>):(map(comment.data, (comm, index) => (
-                comm.message === "" ? (<h2>Ups... al parecer el post no tiene comentarios</h2>):(
+              map(comment.data, (comm, index) => (
                   <li key={index}>
                     <h1>{comm.message}</h1>
                     <div className="comment-main-level">
@@ -45,7 +43,7 @@ export function ModalInfo(props) {
                       </div>
                     </div>
                   </li>)
-            )))
+            )
               
             }
               </>

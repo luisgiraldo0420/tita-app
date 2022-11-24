@@ -27,10 +27,10 @@ console.log(filter);
            
                 <input onChange={event => setFilter(event.target.value)} placeholder='filtrar por tag' />
             <div className='filter-tag__button'>
-                <span onClick={()=>searchTag(filter)} value='tag'><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span onClick={()=>searchTag(filter)} value='tag'><i className="fa-solid fa-magnifying-glass"></i></span>
             </div>
             <div className='filter-tag__button'>
-                <span onClick={refreshPage} value='tag'><i class="fa-solid fa-filter-circle-xmark"></i></span>
+                <span onClick={refreshPage} value='tag'><i className="fa-solid fa-filter-circle-xmark"></i></span>
             </div>
            
         </div>
