@@ -18,7 +18,7 @@ export function AuthProvider(props){
             const token = getToken();
             const data = getData();
             console.log(data, 'data');
-          if (token) {
+          if (token && token !== undefined) {
             setAuth({ token, data });
           } else {
             setAuth(null);

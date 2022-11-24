@@ -11,6 +11,7 @@ export function Login() {
     const {login} = useAuth();
     const responseGoogle = (response) => {
         try {
+          console.log(response);
             login(response.tokenId, response.profileObj)
             toast.success(`${response.profileObj.givenName} Bienvenido`)
         } catch (error) {
