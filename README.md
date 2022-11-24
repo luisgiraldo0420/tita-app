@@ -4,32 +4,33 @@
    <img src="https://img.shields.io/badge/STATUS-FINALIZADO-green">
    </p>
    
-   ##Índice
 
-*[Título e imagen de portada](#Título-e-imagen-de-portada)
+*[Descripción](#descripción-del-proyecto)
 
-*[Insignias](#insignias)
 
-*[Índice](#índice)
+*[Funcionalidad](#Características-de-la-aplicación-y-demostración)
 
-*[Descripción del proyecto](#descripción-del-proyecto)
-
-*[Estado del proyecto](#Estado-del-proyecto)
-
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
-*[Acceso al proyecto](#acceso-proyecto)
 
 *[Tecnologías utilizadas](#tecnologías-utilizadas)
 
+## Descripción
 
-# Getting Started with Create React App
+Proyecto desarrollado para prueba tecnica Tita Media
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Funcionalidad
 
-## Available Scripts
+Inicio de sesión por medio de servicio de Google.
+Listado de post en el home
+ventana modal para ver los comentarios del post.
+ventana modal para ver información del autor del post.
+filtros por tag
+La información del usuario autenticado en el header.
 
-In the project directory, you can run:
+## Tecnologías utilizadas
+React js
+sass
+despliegue en netlify
+https://clinquant-selkie-26971b.netlify.app/
 
 ### `npm start`
 
