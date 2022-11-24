@@ -5,10 +5,10 @@
    </p>
    
 
-*[Descripción](#descripción-del-proyecto)
+*[Descripción](#Descripción)
 
 
-*[Funcionalidad](#Características-de-la-aplicación-y-demostración)
+*[Funcionalidad](#Funcionalidad)
 
 
 *[Tecnologías utilizadas](#tecnologías-utilizadas)
