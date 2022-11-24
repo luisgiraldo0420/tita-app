@@ -1,11 +1,15 @@
 <h1 align="center"> Tita app </h1>
 
+<img width="260" alt="tita" src="https://user-images.githubusercontent.com/104444432/203850827-f9189698-7ae1-4a23-a352-6efeb057839e.png">
+
+
 <p align="left">
    <img src="https://img.shields.io/badge/STATUS-FINALIZADO-green">
    </p>
    
 
-*[Descripción](#Descripción)
+*[Descripción](#Descripción)![Uploading tita.png…]()
+
 
 
 *[Funcionalidad](#Funcionalidad)
