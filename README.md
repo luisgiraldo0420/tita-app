@@ -36,9 +36,9 @@ https://clinquant-selkie-26971b.netlify.app/
 
 ### `Iniciar el proyecto`
 
-1. Clonar el repositorio\
-2. ejecutar yarn o npm install para instalar las dependencias\
-3. correr el comando npm start\
+1. Clonar el repositorio
+2. ejecutar yarn o npm install para instalar las dependencias
+3. correr el comando npm start
 4. iniciar el navehador en [http://localhost:3000](http://localhost:3000)
 
 
