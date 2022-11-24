@@ -4,8 +4,7 @@ import { Post } from '../components/Post/Post';
 import {useAuth} from '../hooks/useAuth';
 import { Login } from '../pages/Login';
 
-export function Layout(props) {
-  const {children} = props;
+export function Layout() {
   const {auth} = useAuth();
 
   if (!auth) return <Login/>

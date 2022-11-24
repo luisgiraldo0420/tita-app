@@ -31,7 +31,7 @@ const openCloseModalUser = (user= undefined) =>{
 }
     useEffect(() => {
         getPost();
-    }, [])
+    },[])
     
     console.log(post);
     return (
@@ -50,14 +50,14 @@ const openCloseModalUser = (user= undefined) =>{
                     <div className='flip-card' key={index}>
                     <div className='flip-card-inner'>
                         <div className='flip-card-front'>
-                            <img src={p.image} />
+                            <img src={p.image} alt='img-post'/>
                             <div className='flip-card-info'>
                             <span>{p.text}</span>
                             <hr/>
                             <ul class="tags">
                                 
                             {map(p.tags, (tag, index) => (
-                                <li key={index}><a href="#" className="tag">{tag}</a></li>
+                                <li key={index}><span href="#" className="tag">{tag}</span></li>
                                 ))}
                             </ul>
                             <div className='interaction'>

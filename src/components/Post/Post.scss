@@ -72,17 +72,18 @@
       
       .tags li {
         float: left; 
+        margin-left: 10px;
       }
       
       .tag {
         background: #eee;
-        font-size: 10px;
+        font-size: 10px!important;
         border-radius: 3px 0 0 3px;
         color: #999;
         display: inline-block;
         height: 15px;
         line-height: 15px;
-        padding: 0 10px 0 10px;
+        padding: 5px 10px 0 10px;
         position: relative;
         margin: 0 10px 10px 0;
         text-decoration: none;
