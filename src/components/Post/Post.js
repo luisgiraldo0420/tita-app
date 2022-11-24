@@ -49,11 +49,9 @@ const openCloseModalUser = (user= undefined) =>{
     }
 
     return (
-        <div className='heading-post'>
-        <h2><span>Post</span></h2>
-
-        <FIlter filterByTag= {filterByTag} refreshPage={refreshPage} />
-       
+<div className='heading-post'>
+    <h2><span>Post</span></h2>
+    <FIlter filterByTag= {filterByTag} refreshPage={refreshPage} />
     <div className='container'>
         {
             loading ? (
