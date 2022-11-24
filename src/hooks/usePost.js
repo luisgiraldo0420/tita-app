@@ -48,9 +48,13 @@ export function usePost(){
     const getPostByTag = async (tag) => {
         try {
             setLoading(true);
+            if (tag !== ''){
             const response = await getPostByTagApi(tag);
             setLoading(false);
             setPostByTags(response)
+            }else{
+                setPostByTags(null)
+            }
         } catch (error) {
             setLoading(false);
             setError(error);

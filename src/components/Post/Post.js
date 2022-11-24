@@ -37,11 +37,15 @@ const openCloseModalUser = (user= undefined) =>{
         getTags();
     },[]);
 
-
+    function refreshPage() {
+        window.location.reload(false);
+      }
     const filterByTag = (filter_tag) => {
         console.log(filter_tag, 'filtro');
         getPostByTag(filter_tag)
     }
+   /*  const greaterTen2 = tags.data.filter(number => number < 5 );
+    console.log(greaterTen2); */
 
     return (
         <div className='heading-post'>
@@ -52,12 +56,10 @@ const openCloseModalUser = (user= undefined) =>{
                 <icon className="nav__icon">
                 <i className="fa-solid fa-filter"></i>
                 </icon>
-                
                 <li className="nav__label">
                     Tags
                 </li>
-
-                <li className="nav__label nav__label--clear">Clear all</li>
+                <li className="nav__label nav__label--clear"><i class="fa-solid fa-filter-circle-xmark"></i></li>
             </menu>
         </nav>
         <div className='filter-tag'>
@@ -69,7 +71,7 @@ const openCloseModalUser = (user= undefined) =>{
                 <span onClick={()=>filterByTag('mountain')} value='tag'>mountain</span>
             </div>
             <div className='filter-tag__button'>
-                <span onClick={()=>filterByTag('')} value='tag'>clear</span>
+                <span onClick={refreshPage} value='tag'>clear</span>
             </div>
            
         </div>
