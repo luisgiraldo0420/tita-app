@@ -17,7 +17,7 @@
 
 ## Descripción
 
-Proyecto desarrollado para prueba tecnica Tita Media\
+Proyecto desarrollado para prueba tecnica Tita Media
 
 ## Funcionalidad
 
@@ -26,7 +26,7 @@ Listado de post en el home.\
 ventana modal para ver los comentarios del post.\
 ventana modal para ver información del autor del post.\
 filtros por tag.\
-La información del usuario autenticado en el header.\
+La información del usuario autenticado en el header.
 
 ## Tecnologías utilizadas
 React js\
