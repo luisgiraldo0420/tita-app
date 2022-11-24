@@ -15,12 +15,12 @@ export function ModalUser(props) {
    <h1>Informacion de usuario <a onClick={onClose} href='#'>Volver</a></h1>
 
 
-    <div class="profile">
-        <div class="profile-image">
+    <div className="profile">
+        <div className="profile-image">
             <img src={user.picture} alt=""/>
         </div>
-        <div class="profile-user-settings">
-            <h1 class="profile-user-name">{user.title} {user.firstName} {user.lastName}</h1>
+        <div className="profile-user-settings">
+            <h1 className="profile-user-name">{user.title} {user.firstName} {user.lastName}</h1>
         </div>
     </div>
 

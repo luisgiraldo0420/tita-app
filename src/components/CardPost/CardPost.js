@@ -12,16 +12,16 @@ export function CardPost(props) {
             <div className='flip-card-info'>
             <span>{p.text}</span>
             <hr/>
-            <ul class="tags">
+            <ul className="tags">
                 
             {map(p.tags, (tag, index) => (
                 <li key={index}><span href="#" className="tag">{tag}</span></li>
                 ))}
             </ul>
             <div className='interaction'>
-                <p class="fa-sharp fa-solid fa-thumbs-up"> {p.likes}</p>
-                <i class="fa-solid fa-comments" onClick={() => openCloseModal(p.id)}></i>
-                <i class="fa-solid fa-user" onClick={() => openCloseModalUser(p.owner)}></i>
+                <p className="fa-sharp fa-solid fa-thumbs-up"> {p.likes}</p>
+                <i className="fa-solid fa-comments" onClick={() => openCloseModal(p.id)}></i>
+                <i className="fa-solid fa-user" onClick={() => openCloseModalUser(p.owner)}></i>
             </div>
         </div>
         </div>

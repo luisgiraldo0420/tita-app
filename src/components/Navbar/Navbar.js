@@ -13,7 +13,7 @@ export function Navbar() {
           <div className="links">
             <ul>
               <li className="dropdown">
-              <span className='dropdown__img-user'><i class="fa-solid fa-bars"></i></span>
+              <span className='dropdown__img-user'><i className="fa-solid fa-bars"></i></span>
 
                 <div className="menu">
                   <div className="menu-container">

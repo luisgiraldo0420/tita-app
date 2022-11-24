@@ -7,13 +7,13 @@ export function FIlter(props) {
    <>
     <nav className="nav">
             <menu className="nav__controls">
-                <icon className="nav__icon">
+                <i className="nav__icon">
                 <i className="fa-solid fa-filter"></i>
-                </icon>
+                </i>
                 <li className="nav__label">
                     Tags
                 </li>
-                <li className="nav__label nav__label--clear"><i class="fa-solid fa-filter-circle-xmark"></i></li>
+                <li className="nav__label nav__label--clear"><i className="fa-solid fa-filter-circle-xmark"></i></li>
             </menu>
         </nav>
         <div className='filter-tag'>
