@@ -26,7 +26,7 @@ export function ModalInfo(props) {
             (
                 <>
                {map(comment.data, (comm, index) => (
-                    <li key={index}>
+                      <li key={index}>
                     <div class="comment-main-level">
                       <div class="comment-box">
                         <div class="comment-head">

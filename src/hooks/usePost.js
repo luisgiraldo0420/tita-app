@@ -1,11 +1,15 @@
 import { useState } from "react";
-import {getPostApi, getCommentApi} from '../api/post';
+import {getPostApi, getCommentApi, getTagsApi, getPostByTagApi} from '../api/post';
 
 export function usePost(){
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
     const [post, setPost] = useState(null);
     const [comment, setComment] = useState(null);
+    const [tags, setTags] = useState(null);
+    const [postByTag, setPostByTags] = useState(null);
+
+
 
 
     const getPost = async () => {
@@ -30,12 +34,38 @@ export function usePost(){
             setError(error);
         }
     };
+    const getTags = async () => {
+        try {
+            setLoading(true);
+            const response = await getTagsApi();
+            setLoading(false);
+            setTags(response)
+        } catch (error) {
+            setLoading(false);
+            setError(error);
+        }
+    };
+    const getPostByTag = async (tag) => {
+        try {
+            setLoading(true);
+            const response = await getPostByTagApi(tag);
+            setLoading(false);
+            setPostByTags(response)
+        } catch (error) {
+            setLoading(false);
+            setError(error);
+        }
+    };
     return {
         loading,
         error,
         post,
         getPost,
         getComment,
-        comment
+        comment,
+        getTags,
+        tags,
+        getPostByTag,
+        postByTag
     }
 }
