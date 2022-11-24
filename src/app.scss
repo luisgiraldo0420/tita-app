@@ -16,5 +16,20 @@ body {
     font-family: 'Raleway', sans-serif;
   }
 
-
+  .content{
+    display:grid;
+    place-items: center;
+    margin: 0;
+    color: #3a334e;
+    animation: rotate 1s infinite alternate linear;
+    height: 100vh;
+    }
+    .login-card{
+        width: 400px;
+        padding: 100px 30px 64px;
+        border-radius: 1.25rem;
+        background-color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+    }
   
