@@ -1,0 +1,9 @@
+export const CLIENT_ID = "321664115733-rkkmkhgg9mkibt4nei9g23i89idrfij9.apps.googleusercontent.com";
+export const BASE_PATH = 'http://';
+export const TOKEN = 'token';
+export const EMAIL = 'email';
+export const NOMBRE = 'nombre';
+export const APELLIDO = 'apellido';
+export const IMAGEN = 'imageUrl';
+export const APP_ID = '637e435e27b4353ba9a39340';
+export const URL_BASE = 'https://dummyapi.io/data/v1'

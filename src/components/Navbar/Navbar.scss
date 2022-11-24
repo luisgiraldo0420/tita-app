@@ -1,0 +1,113 @@
+@import '../../app.scss';
+
+.wrapper {
+  background-color: $gray0;
+  width: 100%;  
+}
+.navbar {
+  max-width: 100%;
+  width: 100%;
+  min-height: 40px;
+  background-color: $main;
+  display: flex;
+  justify-content: space-between;
+  
+  .logo {
+    padding: 10px;
+    color: $primary;
+    font-weight: 600;
+    transition: $transition;
+    &__img{
+        width: 30%;
+    }
+  }
+  .dropdown__img-user{
+    border-radius: 50%;
+  }
+  .links {
+    ul {
+      margin: 0;
+      padding: 10px;
+      li {
+        display: inline;
+        font-weight: 400;
+        color: $colorText;
+        cursor: pointer;
+        margin-right: 10px;
+        
+        &:hover {
+          color: $primary;
+        }
+        
+        &.dropdown {
+          position: relative;
+          cursor: default;
+          
+          .menu {
+            position: absolute;
+            width: 300px;
+            border: 0px;
+            right: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: $transition;
+            
+            .menu-container {
+              width: 100%;
+              min-height: 100px;
+              background-color: white;
+              margin-top: 20px;
+              box-shadow: 0 4px 20px 0 rgb(0 0 0 / 5%);
+              border-radius: $borderRadius;
+              padding: 2px;
+              text-align: center;
+              
+              h3, p {
+                padding: 0;
+              }
+              h3 {
+                font-size: 14px;
+                margin: 0;
+                color: $primary;
+              }
+              a{
+                color: #48c188;
+                cursor: pointer;
+              }
+              
+              .menu-content {
+                width: 100%;
+                min-height: 100px;
+                
+              }
+              .header {
+                padding: 10px 20px 0;
+                color: #666;
+                
+                p.sub-title {
+                  font-size: 11px;
+                  color: #a5a5a5;
+                  margin-top: 7px;
+                  margin-bottom: 10px;
+                }
+              }
+            }
+          }
+          
+          &:hover {
+            .menu {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+          &__img-user{
+            width: 33%;
+            border-radius: 50%;
+            border-color: #ffffff;
+            border: solid 1px;
+          }
+        }
+      }
+    }
+  }
+}
