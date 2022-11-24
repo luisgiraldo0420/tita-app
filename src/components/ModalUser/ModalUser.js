@@ -5,7 +5,6 @@ import './ModalUser.scss';
 
 export function ModalUser(props) {
     const {actionOpen, onClose, user} = props;
-console.log(user);
   return (
     <Modal
     isOpen={actionOpen}

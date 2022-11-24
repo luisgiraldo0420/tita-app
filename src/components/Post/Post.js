@@ -13,6 +13,7 @@ export function Post() {
     const [modaluserOpen, setModalUserOpen] = useState(false);
     const [idpost, setIdpost] = useState(false);
     const [user, setuser] = useState(false);
+    const [tag, setTag] = useState('');
    
 
    
@@ -37,15 +38,13 @@ const openCloseModalUser = (user= undefined) =>{
         getTags();
     },[]);
 
+    
     function refreshPage() {
         window.location.reload(false);
       }
     const filterByTag = (filter_tag) => {
-        console.log(filter_tag, 'filtro');
         getPostByTag(filter_tag)
     }
-   /*  const greaterTen2 = tags.data.filter(number => number < 5 );
-    console.log(greaterTen2); */
 
     return (
         <div className='heading-post'>

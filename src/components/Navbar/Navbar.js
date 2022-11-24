@@ -4,7 +4,6 @@ import {useAuth} from '../../hooks';
 
 export function Navbar() {
     const {auth, logout} = useAuth();
-    console.log(auth.data.imageUrl, '-----');
   return (
     <div className="wrapper">
         <div className="navbar">

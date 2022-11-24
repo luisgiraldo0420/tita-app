@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import routesAdmin from './routes.admin';
 import { map } from 'lodash';
 
-console.log(routesAdmin);
 export function Navigation() {
   return (
 <Router>
